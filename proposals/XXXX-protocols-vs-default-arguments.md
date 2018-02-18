@@ -37,7 +37,7 @@ B.callMe()
 C.callMe()
 ```
 
-There are ways to deal with this issue, but they involve adding extra methods which defeats the purpose of default values in the first place:
+There are ways to deal with this issue, but they involve adding extra methods which defeats the purpose of default values in the first place. For example, you can use two methods like this to fulfill the protocol and achieve the same effect:
 
 ```
 class C: A {
