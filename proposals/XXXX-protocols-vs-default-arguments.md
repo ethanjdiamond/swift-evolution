@@ -125,4 +125,4 @@ class C: A {
 
 This had the advantage that it would easily allow outside classes who viewed the protocol to know of the three possible implied methods of `callMe()`, `callMe(file: String)` and `callMe(file: String, line: Int)` with one line in the protocol.
 
-On the other hand, it felt strange forcing a class to implement defaults for it's parameter values. There might be cases where a certain implementation might not have sensible defaults to use. In addition, if the method wanted to implement a fourth parameter with a default value it would break the protocol even though it should be a valid option.
+On the other hand, it felt strange forcing a class to implement defaults for it's parameter values. There might be cases where a certain implementation might not have sensible defaults to use. It feels less restrictive to allow a method to implement as many parameters with default values as it wants without breaking protocol requirements.
