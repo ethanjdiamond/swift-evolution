@@ -29,7 +29,7 @@ class C: A {
 }
 ```
 
-B will compile properly, while C will display a "class C does not fulfill protocol requirements error". This is true despite both of these being valid:
+B will compile properly, while C will display a "class C does not fulfill protocol requirements" error. This is true despite both of these being valid:
 
 ```
 B.callMe()
